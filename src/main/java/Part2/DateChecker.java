@@ -5,6 +5,9 @@ public class DateChecker {
         if (month == Month.JANUARY) {
             return true;
         }
+        if (month == Month.APRIL) {
+            return false;
+        }
         return false;
     }
 }

@@ -29,4 +29,9 @@ public class DateCheckerTest {
     void testHas31DaysAll31DayMonths(Month month) {
         assertTrue(dateChecker.has31Days(month), month + " should have 31 days");
     }
+
+    @Test
+    void testHas31DaysInvalidInput() {
+        assertFalse(dateChecker.has31Days(null));
+    }
 }
